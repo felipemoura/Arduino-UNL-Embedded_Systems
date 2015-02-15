@@ -1,10 +1,13 @@
 #define LED 13
 
 void setup (void) {
-  DDRC &= ~(1<<4);
-  PORTC |= (1<<4);
+  //  DDRC &= ~(1<<4);
+  //  PORTC |= (1<<4);
   pinMode(LED, OUTPUT);
-
+ 
+  pinMode(A4, INPUT);
+  digitalWrite(A4, HIGH);
+ 
   Serial.begin(9600); 
   while (!Serial) {
     ;
@@ -23,6 +26,7 @@ void loop (void) {
   digitalWrite (LED, LOW);
 
 }
+
 
 
 
