@@ -1,5 +1,6 @@
-// P
-
+// Felipe Moreira Moura
+// Nuid 58797811
+// Exercise 5.b
 
 void setup (void) {
   PORTD |= (0xFF << 5);

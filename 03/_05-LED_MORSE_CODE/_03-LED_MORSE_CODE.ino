@@ -2,6 +2,10 @@
 #include <avr/io.h>
 #include <Arduino.h>
 
+// Felipe Moreira Moura
+// Nuid 58797811
+// Exercise 5.c
+
 void setup (void) {
   DDRD |= (0xFF << 5);
   PORTD &= 0;
